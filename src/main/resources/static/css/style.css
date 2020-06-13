@@ -1,0 +1,73 @@
+.table_sort table {
+    border-collapse: collapse;
+}
+
+.table_sort th {
+    color: #000000;
+    cursor: pointer;
+}
+
+.th-i {
+    background: #a4c2f4;
+}
+
+.wins {
+    background: #6aa84f;
+}
+.losses {
+    background: #cc0000;
+}
+
+.Won {
+    background: #93c47d;
+}
+
+.Lost {
+    background: #e06666;
+}
+
+.Radiant {
+    background: #d9ead3;
+}
+
+.Dire {
+    background: #f4cccc;
+}
+
+.picks {
+    width: 214px;
+}
+
+.bans {
+    width: 162px;
+}
+
+.table_sort td,
+.table_sort th {
+    height: 40px;
+    text-align: center;
+    border: 2px solid #000000;
+}
+
+.table_sort tbody tr:nth-child(even) {
+    background: #cccccc;
+}
+
+th.sorted[data-order="1"],
+th.sorted[data-order="-1"] {
+    position: relative;
+}
+
+th.sorted[data-order="1"]::after,
+th.sorted[data-order="-1"]::after {
+    right: 8px;
+    position: absolute;
+}
+
+th.sorted[data-order="-1"]::after {
+    content: "▼"
+}
+
+th.sorted[data-order="1"]::after {
+    content: "▲"
+}
